@@ -20,7 +20,7 @@
 问题记录1、hexo deploy没有反应1$ hexo deploy
 原因： type、repo、branch关键字后面缺少空格。
 2、hexo deploy报错123$ bash: /dev/tty: No such device or address$ error: failed to execute prompt scrip">
-<meta property="og:updated_time" content="2017-02-05T08:30:41.403Z">
+<meta property="og:updated_time" content="2017-02-05T08:49:00.984Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新年新气象">
 <meta name="twitter:description" content="很久没更新了，换个新的主题yilia。原来的主题是next
@@ -177,6 +177,7 @@
 <p><strong>原因： </strong>type、repo、branch关键字后面缺少空格。</p>
 <h3 id="2、hexo-deploy报错"><a href="#2、hexo-deploy报错" class="headerlink" title="2、hexo deploy报错"></a>2、hexo deploy报错</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ bash: /dev/tty: No such device or address</div><div class="line">$ error: failed to execute prompt script (<span class="built_in">exit</span> code 1)</div><div class="line">$ fatal: could not <span class="built_in">read</span> Username <span class="keyword">for</span> <span class="string">'https://github.com'</span>: Invalid argument</div></pre></td></tr></table></figure>
 <p><strong>解决方法： </strong>删除根目录下的.deploy_git文件夹，重新generate、deploy。</p>
+<h3 id="3、hexo-deploy后CNAME丢失，网页打不开"><a href="#3、hexo-deploy后CNAME丢失，网页打不开" class="headerlink" title="3、hexo deploy后CNAME丢失，网页打不开"></a>3、hexo deploy后CNAME丢失，网页打不开</h3><p><strong>解决方法： </strong>在根目录的source目录下放一份CNAME文件。</p>
 
       
 
