@@ -20,7 +20,7 @@
 问题记录1、hexo deploy没有反应1$ hexo deploy
 原因： type、repo、branch关键字后面缺少空格。
 2、hexo deploy报错123$ /dev/tty: No such device or address$ error: failed to execute prompt script (ex">
-<meta property="og:updated_time" content="2017-02-11T14:52:50.648Z">
+<meta property="og:updated_time" content="2017-02-11T14:58:55.924Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2017年：新年新气象">
 <meta name="twitter:description" content="很久没更新了，换个新的主题yilia。原来的主题是next。
@@ -200,9 +200,13 @@ var _hmt = _hmt || [];
 <h3 id="3、hexo-deploy后CNAME丢失，网页打不开s"><a href="#3、hexo-deploy后CNAME丢失，网页打不开s" class="headerlink" title="3、hexo deploy后CNAME丢失，网页打不开s"></a>3、hexo deploy后CNAME丢失，网页打不开s</h3><p><strong>解决方法： </strong>在根目录的source目录下放一份CNAME文件。</p>
 <h3 id="4、增加百度统计功能"><a href="#4、增加百度统计功能" class="headerlink" title="4、增加百度统计功能"></a>4、增加百度统计功能</h3><p><strong>解决方法： </strong></p>
 <ul>
-<li>编辑主题配置文件<code>themes/yilia/_config.yml</code>，修改baidu_analytics配置为true<br>  baidu_analytics: true</li>
-<li>修改<code>themes\yilia\layout\_partial\baidu-analytics.ejs</code> ，替换百度统计代码。s</li>
+<li>编辑主题配置文件<code>themes/yilia/_config.yml</code>，修改baidu_analytics配置为true</li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">baidu_analytics: <span class="literal">true</span></div></pre></td></tr></table></figure>
+<ul>
+<li>修改<code>themes\yilia\layout\_partial\baidu-analytics.ejs</code> ，替换百度统计代码。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (theme.baidu_analytics)&#123; %&gt;</div><div class="line"><span class="comment">#申请的百度统计代码</span></div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
 <p><strong>参考：</strong></p>
 <ul>
 <li><a href="http://caoyudong.com/2015/09/16/hexo%E6%B7%BB%E5%8A%A0%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/" target="_blank" rel="external">hexo添加百度统计</a></li>
